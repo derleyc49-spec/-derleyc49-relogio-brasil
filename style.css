@@ -1,0 +1,110 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+min-height:100vh;
+color:white;
+}
+
+header{
+text-align:center;
+padding:40px 20px;
+}
+
+header h1{
+font-size:42px;
+font-weight:700;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+opacity:.8;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding-bottom:40px;
+}
+
+.titulo{
+margin:40px 0 20px;
+font-size:28px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.clock-card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.15);
+border-radius:20px;
+padding:25px;
+text-align:center;
+transition:.3s;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.clock-card:hover{
+transform:translateY(-8px);
+}
+
+.principal{
+margin-bottom:40px;
+padding:40px;
+}
+
+.clock-card h2,
+.clock-card h3{
+margin-bottom:15px;
+}
+
+.time{
+font-size:42px;
+font-weight:bold;
+margin:15px 0;
+color:#38bdf8;
+}
+
+.date{
+font-size:17px;
+opacity:.8;
+}
+
+footer{
+text-align:center;
+padding:30px;
+opacity:.7;
+margin-top:40px;
+}
+
+@media(max-width:700px){
+
+header h1{
+font-size:30px;
+}
+
+.time{
+font-size:30px;
+}
+
+.titulo{
+font-size:22px;
+}
+
+.principal{
+padding:25px;
+}
+
+}
